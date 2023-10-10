@@ -1,2 +1,2 @@
 #!/bin/bash
-(echo -n "./, ../, " && ls -Ap | grep -E '[A-Za-z0-9]' | tr '\n' ',' | sed 's/,$/\n/') | tr -d '\n'
+ls -Ap | sed -e '1!s/^/, /' -e 's/$/\//'
