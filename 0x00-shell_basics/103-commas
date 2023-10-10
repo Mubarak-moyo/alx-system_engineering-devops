@@ -1,3 +1,2 @@
 #!/bin/bash
-ls -Ap | sed 'N;s/\n/, /'
-
+ls -Ap | sed 'N;s/\n/, /'`
