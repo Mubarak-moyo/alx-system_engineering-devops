@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Ap | sed -e '1!s/^/, /' -e 's/$/\//'
+ls -xamp
