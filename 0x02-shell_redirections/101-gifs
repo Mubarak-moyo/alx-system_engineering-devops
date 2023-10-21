@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -type f -name "*.gif" -exec basename {} .gif \; | tr '[:upper:]' '[:lower:]' | sort | sed -e 's/\(.*\)/\1.gif/' | sed '1i\' -e '$!N' -e '$!D'
